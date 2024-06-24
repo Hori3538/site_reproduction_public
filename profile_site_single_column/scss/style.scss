@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+$font-color: #383E45;
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+    line-height: auto;
+    color: $font-color;
+    // color: #990;
+    // padding: 0 4%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.wrapper {
+    padding: 0 4%;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    // background-color: #990;
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+    
+
+    .logo {
+        width: 120px;
+    }
+
+    .global-nav {
+        margin: auto 0;
+        // background-color: #099;
+    }
+
+    .global-nav ul {
+        display: flex;
+        font-size: .9rem;
+        list-style: none;
+        gap: 30px;
+
+        a {
+            color: $font-color;
+        }
+    }
+}
+
+.main-visual {
+    margin-bottom: 80px;
+    .main-bicycle {
+        height: 600px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.section {
+    text-align: center;
+    &__title {
+        display: inline-block;
+        // text-align: center;
+        padding: 0 0 5px;
+        font-size: 2rem;
+        font-weight: bold;
+        // display: flex;
+        // margin: 0 auto;
+        border-bottom: 1px solid $font-color;
+        // text-decoration: underline;
+        // background-color: #099;
+        margin-bottom: 70px;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+        // width: 345px;
+        img {
+            width: 100px;
+            border-radius: 50px;
+            margin-bottom: 10px;
+        }
+
+        &__name {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        &__doc {
+            width: 345px;
+        }
+    }
+
+    
+}
+
+.text {
+    text-align: left;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17.2px;
+}
+
+.post {
+    margin-bottom: 30px;
+}
+
+.post-image {
+    margin-bottom: 10px;
+}
+
+.post-image {
+    // height: 228px;
+    // width: 345px;
+    // object-fit: cover;
+    width: 100%;
+}
+
+.copyright {
+    padding: 80px 0 10px;
+    font-size: 0.5rem;
+}
+
+// デスクトップ版
+
+@media (min-width: 600px) {
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+        // flex-grow: 1;
+    }
+
+    .profile img {
+        margin-right: 0;
+    }
+
+    .posts {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

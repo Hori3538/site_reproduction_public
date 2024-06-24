@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- reset css -->
+     <!-- reset.css ress -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" /> -->
+
+    <!-- reset.css destyle -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+    <header class="page-header wrapper">
+        <h1><a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a></h1>
+        <nav class="global-nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#bicycle">Bicycle</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-visual">
+        <img class="main-bicycle" src="images/mainvisual.jpg" alt="main-visual" class="main-bicycle">
+    </div>
+
+    <section class="section wrapper" id="about">
+        <h2 class="section__title">About</h2>
+        <div class="profile">
+            <img src="images/about.jpg" alt="profile" class="profile__image">
+            <div class="text">
+                <h3 class="profile__name">KAKERU MIYAICHI</h3>
+                <p class="profile__doc">テキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section wrapper" id="bicycle">
+        <h2 class="section__title">Bicycle</h2>
+        <ul class="posts">
+            <li class="post">
+                <img class="post-image" src="images/bicycle1.jpg" alt="bicycle1" class="post-image">
+                <h3 class="profile__name align-center">タイトルタイトル</h3>
+                <p class="profile__doc align-center">テキストテキストテキスト</p>
+            </li>
+            <li class="post">
+                <img class="post-image" src="images/bicycle2.jpg" alt="bicycle2" class="post-image">
+                <h3 class="profile__name align-center">タイトルタイトル</h3>
+                <p class="profile__doc align-center">テキストテキストテキスト</p>
+            </li>
+            <li class="post">
+                <img class="post-image" src="images/bicycle3.jpg" alt="bicycle3" class="post-image">
+                <h3 class="profile__name align-center">タイトルタイトル</h3>
+                <p class="profile__doc align-center">テキストテキストテキスト</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="copyright align-center">
+            <p>&copy; 2020 Profile</p>
+        </div>
+    </footer>
+</body>
+</html>
